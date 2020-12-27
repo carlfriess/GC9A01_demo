@@ -85,9 +85,6 @@ void loop() {
 
     // Checkerboard
     for (int x = 0; x < 240; x++) {
-        color[0] = sin(frequency*x + 0) * 127 + 128;
-        color[1] = sin(frequency*x + 2) * 127 + 128;
-        color[2] = sin(frequency*x + 4) * 127 + 128;
         for (int y = 0; y < 240; y++) {
             if ((x / 10) % 2 ==  (y / 10) % 2) {
                 color[0] = 0xFF;
